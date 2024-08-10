@@ -126,7 +126,6 @@ jobs:
               # Upload immediately after parsing
               REPO_NAME=${{ github.repository }}
               COMMIT_HASH=${{ github.sha }}
-              sbom_content=$(jq -c '.' "$dirname/${bom_filename}.json")
 
               cat $dirname/${bom_filename}.json
 
